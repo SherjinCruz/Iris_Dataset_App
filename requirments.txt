@@ -3,3 +3,14 @@ pandas
 scikit-learn
 streamlit
 
+from pathlib import Path
+import pickle
+
+# If iris_model.pkl is in the project root:
+model_path = Path(__file__).parents[1] / "iris_model.pkl"
+
+# Or if iris_model.pkl is inside pages/:
+model_path = Path(__file__).parent / "iris_model.pkl"
+
+with open(model_path, "rb") as f:
+    model = pickle.load(f)
