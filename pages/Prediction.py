@@ -4,7 +4,7 @@ import pickle
 import streamlit as st
 
 # 1. Use raw string (r"...") or forward slashes to prevent escape character errors in Windows paths
-model = pickle.load(open("iris_model.pkl", "rb"))
+model = pickle.load(open("D:/ICT/DSA 11/Streamlit/Iris/iris_model.pkl", "rb"))
 
 st.title("Iris Flower Prediction App")
 
